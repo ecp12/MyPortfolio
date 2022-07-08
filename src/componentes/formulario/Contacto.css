@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 600px){
+  .Formulario{
+    min-width: 0vh !important;
+    margin-top: 0px !important;
+    
+}
+  
+}
+
+.Formulario{
+  background: -webkit-linear-gradient(to right, hsla(0, 0%, 98%, 0.459), hsla(237, 45%, 52%, 0.664)), url("https://media4.giphy.com/media/xWMPYx55WNhX136T0V/giphy.gif?cid=ecf05e47o317njoxgrmwrcoxvg4ct85j2vrs7r4oe88pz3zf&rid=giphy.gif&ct=g") ;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, hsla(0, 0%, 98%, 0.459), hsla(237, 45%, 52%, 0.664)), url("https://media4.giphy.com/media/xWMPYx55WNhX136T0V/giphy.gif?cid=ecf05e47o317njoxgrmwrcoxvg4ct85j2vrs7r4oe88pz3zf&rid=giphy.gif&ct=g");
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  margin-top: 150px;
+  min-width: 90vh;
+  border-radius: 20px;
+  
+ 
+}
+
+.miFormulario{
+    display: flex;
+    flex-direction: column;
+    font-size: 50px; 
+    border-color: black;
+    border-style: solid;
+    align-items: center;
+    border-radius: 20px;
+    font-family:'Courier New', Courier, monospace ;
+    color: white;
+    text-size-adjust: 20px;
+   
+}
+  
+
+.contFormulario{
+  display: flex;
+    flex-direction: row;
+    align-items:end;
+    margin-top: 80px;
+    -webkit-text-stroke: thin;
+}
+
+.titulos{
+font-size: 40px;
+
+}
+
+.casillas{
+  width: calc(100% - 75px);
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    font-size: 30px;
+    font-weight: 100;
+    margin-left: 10px;
+  border-bottom: 2px solid #eceff4;
+  background: none;
+  border-radius: 10px;
+}
+.mi-form-boton{
+  margin: 40px;
+  position: relative;
+  background: linear-gradient(rgba(251,75,2,1),rgba(255,27,0,1));
+  border: none;
+  box-shadow: 2px 2px 1px rgba(255,151,0,0.5) inset, 5px 5px 15px #4c4c4c;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  overflow: hidden;
+}
+.mi-form-boton:before{
+  display: inline-block;
+  position: absolute;
+  right: 90px;
+  top: 0;
+  content:'';
+  width: 50px;
+  height: 100%;
+  background-color: white;
+  animation: mi-form-boton 5s ease-out infinite;
+}
+@keyframes mi-form-boton{
+    0% {transform: scale(0) skewX(-20deg); opacity: 0; }
+    79% {transform: scale(0) skewX(-20deg); opacity: 0.5; }
+    80% {transform: scale(1) skewX(-20deg); opacity: 1; }
+    100% {transform: scale(80) skewX(-20deg); opacity: 0; }
+}

@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 600px) {
+  
+  
+}
+
+
+.App {
+  background: #bc4e9c;
+  /* fallback for old browsers */
+  background: url("https://media3.giphy.com/media/SjkNtYAuV4OXbRIGEc/giphy.gif?cid=ecf05e47w9k07wnuchf027qsq3cepiroa80b23shhy46ngm5&rid=giphy.gif&ct=g") ;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background:  url("https://media3.giphy.com/media/SjkNtYAuV4OXbRIGEc/giphy.gif?cid=ecf05e47w9k07wnuchf027qsq3cepiroa80b23shhy46ngm5&rid=giphy.gif&ct=g");
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  
+  
+}
+
+.App-logo {
+  height: 30vmin;
+  pointer-events: none;
+  border-radius: 500px;
+  margin: 0px  5px 60px;
+  border-end-end-radius: 16px;
+ 
+  
+
+}
+
+.contenedorlogo{
+  margin-left: 30px;
+}
+
+
+
+.App-header {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  
+  
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.contenedorimagen{
+  background-color:#23232e;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px;
+  border-radius: 80px;
+  
+}
+.Textos{
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 30px;
+
+}
+.intro{
+font-size: 50px;
+color: #61dafb;
+}
+.titulo{
+  font-size: 35px;
+}
+.Bienvenida{
+  font-size: 25px;
+}

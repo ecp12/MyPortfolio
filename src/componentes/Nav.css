@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.App-logodos {
+    pointer-events: none;
+    width: 70px;
+    height: 70px;
+    border-radius: 60px;
+    margin-top: 30px;
+    
+    
+    
+  }
+  
+  /* 
+  ========================================== 
+  Navbar
+  ========================================== 
+  */
+  
+  
+  
+  
+  :root {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --transition-speed: 600ms;
+  }
+  
+  
+
+  .navbar {
+    position: fixed;
+    background-color: var(--bg-primary);
+    transition: width 600ms ease;
+    z-index: 3;
+   
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .nav-item {
+    width: 100%;
+    list-style: none;
+    align-self: center;
+    
+  }
+  .icono{
+    width:70px;
+    height:70px;
+    background-color: #35535c;
+  border-radius: 110px;
+  margin-left: 5px;
+  
+
+  }
+  
+  .nav-item:last-child {
+    margin-top: auto;
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: var(--transition-speed);
+  }
+  
+  .nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+  }
+  
+  .link-text {
+    display:none;
+    margin-left: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    
+  
+  }
+  
+  .nav-link svg {
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+  }
+  
+  .piano {
+    color: #df49a6;
+  }
+  
+  .fa-primary {
+    color: #ff7eee;
+  }
+  
+  .fa-secondary {
+    color: #df49a6;
+  }
+  
+  .fa-primary,
+  .fa-secondary {
+    transition: var(--transition-speed);
+  }
+  
+  .logo {
+    list-style: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+    width: 100%;
+    
+  }
+  
+  .logo svg {
+    transform: rotate(0deg);
+    transition: var(--transition-speed);
+  }
+  
+  .logo-text {
+    display: flex;
+    position: absolute;
+    left: -999px;
+    transition: var(--transition-speed);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 70px;
+    
+  }
+  
+  .navbar:hover .logo svg {
+    transform: rotate(-180deg);
+  }
+  
+  /* Small screens */
+  @media only screen and (max-width: 600px) {
+    .navbar {
+      bottom: 0;
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+     
+    }
+  
+    .logo {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .nav-item:last-child {
+      margin-top: 0px !important;
+  }
+  
+    .nav-link {
+      justify-content: center;
+      
+      
+    }
+  
+    main {
+      margin: 0;
+    }
+  }
+  
+  /* Large screens */
+  @media only screen and (min-width: 600px) {
+    .navbar {
+      overflow: hidden;
+      top: 0;
+      width: 5rem;
+      height: 100vh;
+        
+    }
+  
+    .navbar:hover {
+      width: 16rem;
+    }
+  
+    .navbar:hover .link-text {
+      display: inline;
+    }
+  
+    .navbar:hover .logo svg {
+      margin-left: 11rem;
+    }
+  
+    .navbar:hover .logo-text {
+      left: 0px;
+    }
+  }
+  
+  .dark {
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+  }
+  
+  .light {
+    --text-primary: #1f1f1f;
+    --text-secondary: #000000;
+    --bg-primary: #ffffff;
+    --bg-secondary: #e4e4e4;
+  }
+  
+  .solar {
+    --text-primary: #576e75;
+    --text-secondary: #35535c;
+    --bg-primary: #fdf6e3;
+    --bg-secondary: #f5e5b8;
+  }
+  
+  .theme-icon {
+    display: none;
+  }
+  
+  .dark #darkIcon {
+    display: block;
+  }
+  
+  .light #lightIcon {
+    display: block;
+  }
+  
+  .solar #solarIcon {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+  
+    background: #cdcdcd;
+    border-radius: 3px;
+  
+    z-index: 1;
+  
+    transform-origin: 4px 0px;
+  
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      opacity 0.55s ease;
+  }
+  
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+  
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+  
+  /* 
+   * Transform all the slices of hamburger
+   * into a crossmark.
+   */
+  #menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+  
+  /*
+   * But let's hide the middle one.
+   */
+  #menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  /*
+   * Ohyeah and the last one should go the other direction
+   */
+  #menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  
+  /*
+   * Make this absolute positioned
+   * at the top left of the screen
+   */
+  #menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+  
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+  
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+  
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+  }
+  
+  #menu li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+  
+  /*
+   * And let's slide it in from the left
+   */
+  #menuToggle input:checked~ul {
+    transform: none;
+  }
+  
+
+
+
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logodos {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
