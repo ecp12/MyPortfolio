@@ -12,7 +12,7 @@ const Projecto = () => {
          <div class="pagProjecto">
           <img src={demo} class="gif" alt="" />
           <p class="textosDos">Relog echo con Js</p>
-          <a href="https://github.com/ecp12/Relog">
+          <a href="https://github.com/ecp12/ReloJs">
           <button class="custom-btn btn-12"><span>Click!</span><span>ver codigo</span></button></a>
          </div>
          <div class="pagProjecto">
