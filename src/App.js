@@ -25,7 +25,7 @@ function App() {
           Hola, Soy Erick Crespin
         </h1>
         <p class="Bienvenida">
-          Soy Desarrollador web y vivo en Bracelona, España.
+          Soy Desarrollador web y vivo en Barcelona, España.
         </p>
         </div>
       </div>
